@@ -11,7 +11,6 @@
 		8AAA00A3280680C9000A917D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAA00A2280680C9000A917D /* ContentView.swift */; };
 		8AAA00A5280680CA000A917D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AAA00A4280680CA000A917D /* Assets.xcassets */; };
 		8AAA00A8280680CA000A917D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AAA00A7280680CA000A917D /* Preview Assets.xcassets */; };
-		8AAA00B1280681DB000A917D /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAA00B0280681DB000A917D /* MyWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +19,6 @@
 		8AAA00A2280680C9000A917D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8AAA00A4280680CA000A917D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AAA00A7280680CA000A917D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8AAA00B0280681DB000A917D /* MyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
 		8AAA00B22806828D000A917D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				8AAA00B22806828D000A917D /* Info.plist */,
-				8AAA00B0280681DB000A917D /* MyWebView.swift */,
 				8AAA00A0280680C9000A917D /* DolphiniOSApp.swift */,
 				8AAA00A2280680C9000A917D /* ContentView.swift */,
 				8AAA00A4280680CA000A917D /* Assets.xcassets */,
@@ -143,7 +140,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AAA00A3280680C9000A917D /* ContentView.swift in Sources */,
-				8AAA00B1280681DB000A917D /* MyWebView.swift in Sources */,
 				8AAA00A1280680C9000A917D /* DolphiniOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +275,6 @@
 				INFOPLIST_FILE = DolphiniOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -310,7 +305,6 @@
 				INFOPLIST_FILE = DolphiniOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
