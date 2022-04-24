@@ -9,11 +9,38 @@ import SwiftUI
 import WebKit
 
 struct ContentView: View {
+    @State var isLoading: Bool = true
     var body: some View {
-            Image("logo")
+        ZStack {
+            // 1) CHANGED: zIndex added
+            // 앱 화면
             Webview(url: URL(string: "http://222.122.196.22:8380/login.frm")!)
+                    
+            // Launch Screen
+            if isLoading {
+                // 2) CHANGED: transition and zIndex added
+                launchScreenView.transition(.opacity).zIndex(1)
+            }
+                    
+        }.onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+                //3) CHANGED: withAnimation added
+                withAnimation { isLoading.toggle() }
+            })
+        }
+    }
+}
+
+extension ContentView {
+    
+    var launchScreenView: some View {
+        
+        ZStack(alignment: .center) {
+            Image("logo")
+        }
         
     }
+    
 }
 
 struct Webview: UIViewRepresentable {
@@ -29,15 +56,7 @@ struct Webview: UIViewRepresentable {
         webview.load(request)
     }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        UIApplication.shared.isNetworkActivityIndicatorVisible = false
-        let url = webView.url
-
-        if url?.absoluteString.range(of: ".pdf") != nil {
-            pdfBackButton.isHidden = false
-        }
-        else {
-            pdfBackButton.isHidden = true
-        }
+        
     }
 }
 
